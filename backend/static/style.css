@@ -12,32 +12,8 @@
     flex-direction: column;
 }
 
-#google-u {
-    color: #4285F4;
-}
-
-#google-p {
-    color: #DB4437;
-}
-
-#google-s {
-    color: #F4B400;
-}
-
-#google-t {
-    color: #4285F4;
-}
-
-#google-y {
-    color: #0F9D58;
-}
-
-#google-l {
-    color: #DB4437;
-}
-
-#google-e {
-    color: #DB4437;
+#upstyle-w {
+    color: #ffffff;
 }
 
 .google-colors {
@@ -92,4 +68,17 @@
 
 .episode-desc {
     font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'Vogue';
+    src: url('../static/fonts/Vogue.ttf') format('truetype');
+}
+
+h1 {
+    font-family: 'Vogue', sans-serif;
 }

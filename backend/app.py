@@ -27,7 +27,7 @@ CORS(app)
 # Sample search, the LIKE operator in this case is hard-coded, 
 # but if you decide to use SQLAlchemy ORM framework, 
 # there's a much better and cleaner way to do this
-def sql_search(episode):
+def sql_search(names):
     query_sql = f"""SELECT * FROM fashion_db"""
     keys = ["Name","Price","Tagline","Description"]
     data = mysql_engine.query_selector(query_sql)

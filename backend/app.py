@@ -37,9 +37,17 @@ def sql_search(episode):
 def home():
     return render_template('base.html',title="sample html")
 
-@app.route("/episodes")
-def episodes_search():
-    text = request.args.get("title")
+@app.route("/artizia_tshirts_and_tops")
+def taglines_search():
+    text = request.args.get("Tagline")
+    return sql_search(text)
+
+def descriptions_search():
+    text = request.args.get("Description")
+    return sql_search(text)
+
+def names_search():
+    text = request.args.get("Name")
     return sql_search(text)
 
 if 'DB_NAME' not in os.environ:

@@ -25,7 +25,7 @@
 
 .google-colors h1 {
     margin-bottom: 0;
-    margin-right: 3px;
+    margin-right: 0px;
 }
 
 .input-box {
@@ -52,9 +52,10 @@
 .input-box input {
     width: 100%;
     margin-left: 10px;
-    font-size: 16px;
+    font-size: 20px;
     border: none;
     outline: 0;
+    border-radius: 15px;
 }
 
 #answer-box {
@@ -64,21 +65,18 @@
 
 .episode-title {
     font-family: 'Kanit', sans-serif;
+    color: white;
 }
 
 .episode-desc {
     font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 
 body {
     background-color: black;
 }
 
-@font-face {
-    font-family: 'Vogue';
-    src: url('../static/fonts/Vogue.ttf') format('truetype');
-}
-
 h1 {
-    font-family: 'Vogue', sans-serif;
+    font-family: Didot, sans-serif;
 }

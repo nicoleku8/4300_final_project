@@ -26,11 +26,12 @@
 .google-colors h1 {
     margin-bottom: 0;
     margin-right: 0px;
+    font-family: Didot, sans-serif;
 }
 
 .input-box {
     border-radius: 50px;
-    border: 1px solid black;
+    border: 1px solid white;
     display: flex;
     align-items: center;
     margin-top: 10px;
@@ -65,18 +66,14 @@
 
 .episode-title {
     font-family: 'Kanit', sans-serif;
-
+    color: white;
 }
 
 .episode-desc {
     font-family: 'Montserrat', sans-serif;
-
+    color: white;
 }
 
 body {
     background-color: black;
-}
-
-h1 {
-    font-family: Didot, sans-serif;
 }

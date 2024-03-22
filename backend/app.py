@@ -30,7 +30,7 @@ CORS(app)
 def sql_search(names):
     query_sql = f"""SELECT Tagline, Description, Name FROM aritzia_tshirts_and_tops WHERE LOWER( Description ) LIKE '%%{input.lower()}%%' limit 10"""
     
-    keys = ["Name","Price","Tagline","Description"]
+    keys = ["Name","Tagline","Description"]
     data = mysql_engine.query_selector(query_sql)
     return json.dumps([dict(zip(keys,i)) for i in data])
 

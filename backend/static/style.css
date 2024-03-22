@@ -20,13 +20,13 @@
     display: flex;
     align-items: center;
     font-size: 48px;
-    font-family: 'Open Sans', sans-serif;
+
 }
 
 .google-colors h1 {
     margin-bottom: 0;
     margin-right: 0px;
-    font-family: Didot, sans-serif;
+    font-family: 'Didot', sans-serif;
 }
 
 .input-box {

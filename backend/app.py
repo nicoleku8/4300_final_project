@@ -32,11 +32,8 @@ def sql_search(names):
     
     keys = ["Name","Tagline","Description"]
     #data = mysql_engine.query_selector(query_sql)
-     data = {
-        "Name": "Homestretch crew tshirt"
-        "Tagline": "Race ya"
-     }
-    return json.dumps(data)
+    data = mysql_engine.query_selector(query_sql)
+    return json.dumps([dict(zip(keys,i)) for i in data])
 
 @app.route("/")
 def home():

@@ -1,3 +1,4 @@
+/* CSS styles */
 .full-body-container {
     position: absolute;
     top: 0;
@@ -18,25 +19,23 @@
     display: inline-block;
 }
 
-.upstyle-letter::after, .upstyle-letter::before {
+.upstyle-letter::after,
+.upstyle-letter::before {
     content: '';
     position: absolute;
     left: 0;
     right: 0;
-    height: 2px; /* Height of the underline */
-    background-color: white; /* Color of the underline */
+    height: 2px;
+    background-color: white;
 }
 
 .upstyle-letter::after {
-    bottom: 16px; /* Position of the first line under the text */
+    bottom: 16px;
 }
 
 .upstyle-letter::before {
-  
-     top: 16px; 
-    
-  /* Position of the second line under the first line */
-  /*bottom: 24 */
+
+    top: 16px;
 }
 
 .google-colors {
@@ -45,13 +44,34 @@
     font-size: 48px;
 }
 
-
-
-
 .google-colors h1 {
     margin-bottom: 0;
     margin-right: 0px;
     font-family: 'Didot', sans-serif;
+}
+
+.gif-container {
+    display: flex;
+    justify-content: center;
+    /* This will center the GIFs horizontally */
+    align-items: center;
+    /* This will align the GIFs vertically */
+    margin-top: 40px;
+    /* Adjust based on spacing needed from the UPSTYLE text */
+}
+
+.gif-container img {
+    margin-right: 15px;
+    /* Adds some space between the two GIFs */
+    width: auto;
+    /* Maintains the aspect ratio of the GIFs */
+    height: 100px;
+    /* Adjust based on the desired size, keeping them uniform */
+}
+
+/* Optional: Remove margin from the last image */
+.gif-container img:last-child {
+    margin-right: 0;
 }
 
 .input-box {

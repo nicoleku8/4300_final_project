@@ -9,13 +9,18 @@
     <div class="full-body-container">
         <div class="top-text">
             <div class="google-colors">
-                <h1 id="upstyle-w">U</h1>
-                <h1 id="upstyle-w">P</h1>
-                <h1 id="upstyle-w">S</h1>
-                <h1 id="upstyle-w">T</h1>
-                <h1 id="upstyle-w">Y</h1>
-                <h1 id="upstyle-w">L</h1>
-                <h1 id="upstyle-w">E</h1>
+                <h1 class=upstyle-letter id="upstyle-w">U</h1>
+                <h1 class=upstyle-letter id="upstyle-w">P</h1>
+                <h1 class=upstyle-letter id="upstyle-w">S</h1>
+                <h1 class=upstyle-letter id="upstyle-w">T</h1>
+                <h1 class=upstyle-letter id="upstyle-w">Y</h1>
+                <h1 class=upstyle-letter id="upstyle-w">L</h1>
+                <h1 class=upstyle-letter id="upstyle-w">E</h1>
+            </div>
+            <!-- Adding GIFs below the UPSTYLE text -->
+            <div class="gif-container">
+                <img src="{{ url_for('static', filename='images/fashion-chanel.gif') }}" alt="First GIF">
+                <img src="{{ url_for('static', filename='images/fashion-chloe.gif') }}" alt="Second GIF">
             </div>
             <div class="input-box" onclick="sendFocus()">
                 <img src="{{ url_for('static', filename='images/mag.png') }}" />

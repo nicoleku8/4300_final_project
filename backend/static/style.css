@@ -14,15 +14,39 @@
 
 #upstyle-w {
     color: #ffffff;
+    position: relative;
+    display: inline-block;
+}
+
+.upstyle-letter::after, .upstyle-letter::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px; /* Height of the underline */
+    background-color: white; /* Color of the underline */
+}
+
+.upstyle-letter::after {
+    bottom: 16px; /* Position of the first line under the text */
+}
+
+.upstyle-letter::before {
+  
+     top: 16px; 
+    
+  /* Position of the second line under the first line */
+  /*bottom: 24 */
 }
 
 .google-colors {
     display: flex;
     align-items: center;
     font-size: 48px;
-    font-family:
-
 }
+
+
+
 
 .google-colors h1 {
     margin-bottom: 0;
@@ -35,7 +59,7 @@
     border: 1px solid white;
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 40px;
     padding: 12px;
     width: 600px;
 }

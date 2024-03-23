@@ -63,9 +63,9 @@
 .gif-container img {
     margin-right: 15px;
     /* Adds some space between the two GIFs */
-    width: auto;
+    width: 300px;
     /* Maintains the aspect ratio of the GIFs */
-    height: 100px;
+    height: 260px;
     /* Adjust based on the desired size, keeping them uniform */
 }
 

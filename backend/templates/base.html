@@ -17,6 +17,11 @@
                 <h1 id="upstyle-w">L</h1>
                 <h1 id="upstyle-w">E</h1>
             </div>
+            <!-- Adding GIFs below the UPSTYLE text -->
+            <div class="gif-container">
+                <img src="{{ url_for('static', filename='images/fashion-chanel.gif') }}" alt="First GIF">
+                <img src="{{ url_for('static', filename='images/fashion-chloe.gif') }}" alt="Second GIF">
+            </div>
             <div class="input-box" onclick="sendFocus()">
                 <img src="{{ url_for('static', filename='images/mag.png') }}" />
                 <input placeholder="Search for an aesthetic" id="filter-text-val" onkeyup="filterText()">

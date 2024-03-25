@@ -29,9 +29,10 @@ CORS(app)
 # there's a much better and cleaner way to do this
 def sql_search(episode):
     query_sql = f"""SELECT * FROM episodes WHERE LOWER( title ) LIKE '%%{episode.lower()}%%' limit 10"""
-    keys = ["title","descr"]
+    keys = ["id","title","descr"]
     data = mysql_engine.query_selector(query_sql)
     return json.dumps([dict(zip(keys,i)) for i in data])
+
 
 @app.route("/")
 def home():

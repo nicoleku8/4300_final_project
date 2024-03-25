@@ -27,11 +27,9 @@ CORS(app)
 # Sample search, the LIKE operator in this case is hard-coded, 
 # but if you decide to use SQLAlchemy ORM framework, 
 # there's a much better and cleaner way to do this
-def sql_search(names):
-    query_sql = f"""SELECT Tagline, Description, Name FROM fashion_db WHERE LOWER( Description ) LIKE '%%{input.lower()}%%' limit 10"""
-    
-    keys = ["Name","Tagline","Description"]
-    #data = mysql_engine.query_selector(query_sql)
+def sql_search(episode):
+    query_sql = f"""SELECT * FROM episodes WHERE LOWER( title ) LIKE '%%{episode.lower()}%%' limit 10"""
+    keys = ["id","title","descr"]
     data = mysql_engine.query_selector(query_sql)
     return json.dumps([dict(zip(keys,i)) for i in data])
 
@@ -39,17 +37,9 @@ def sql_search(names):
 def home():
     return render_template('base.html',title="sample html")
 
-@app.route("/artizia_tshirts_and_tops")
-def taglines_search():
-    text = request.args.get("Tagline")
-    return sql_search(text)
-
-def descriptions_search():
-    text = request.args.get("Description")
-    return sql_search(text)
-
-def names_search():
-    text = request.args.get("Name")
+@app.route("/episodes")
+def episodes_search():
+    text = request.args.get("title")
     return sql_search(text)
 
 if 'DB_NAME' not in os.environ:
